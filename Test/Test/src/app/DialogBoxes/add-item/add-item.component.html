@@ -1,0 +1,67 @@
+
+<form [formGroup]="ItemForm" (ngSubmit)="Save()">
+        
+    <mat-form-field appearance="outline">
+      <mat-label>id</mat-label>
+      <input formControlName="id" matInput placeholder="press id" required maxlength="9">
+      <mat-error *ngIf="this.ItemForm.get('id')?.invalid">{{getErrorMessage(this.ItemForm.get('id'))}}</mat-error> 
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>name</mat-label>
+        <input formControlName="name" matInput placeholder="pressname" required>
+        <mat-error *ngIf="this.ItemForm.get('name')?.invalid">{{getErrorMessage(this.ItemForm.get('name'))}}</mat-error> 
+    </mat-form-field>
+  
+
+      <mat-form-field appearance="outline">
+        <mat-label>description</mat-label>
+        <input formControlName="description" matInput placeholder="press description">
+        <mat-error *ngIf="this.ItemForm.get('description')?.invalid">{{getErrorMessage(this.ItemForm.get('description'))}}</mat-error>
+     </mat-form-field>
+  
+
+      <mat-form-field appearance="outline">
+        <mat-label>features</mat-label>
+        <input formControlName="features" matInput placeholder="press features" >
+        <mat-error *ngIf="this.ItemForm.get('features')?.invalid">{{getErrorMessage(this.ItemForm.get('features'))}}</mat-error>
+       
+      </mat-form-field>
+  
+
+      <mat-form-field appearance="outline">
+        <mat-label>price</mat-label>
+        <input formControlName="price" matInput placeholder="press price" type="number">        
+      </mat-form-field>
+  
+
+      <mat-form-field appearance="outline">
+        <mat-label>keywords</mat-label>
+        <input formControlName="keywords" matInput placeholder="press keywords" >       
+      </mat-form-field>
+  
+
+      <mat-form-field appearance="outline">
+        <mat-label>url</mat-label>
+        <input formControlName="url" matInput placeholder="press url" >
+        
+      </mat-form-field>
+  
+
+      <mat-form-field appearance="outline">
+        <mat-label>category</mat-label>
+        <input formControlName="category" matInput placeholder="press category" >        
+      </mat-form-field>
+  
+  
+
+
+    <mat-form-field appearance="outline">
+        <mat-label>subcategory</mat-label>
+        <input formControlName="subcategory" matInput placeholder="press subcategory" >        
+      </mat-form-field>  
+ 
+</form>
+
+<button mat-raised-button type="submit" (click)="Save()" >Save</button>
+

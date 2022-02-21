@@ -1,0 +1,19 @@
+
+
+mat-card
+{
+   
+    height: 80%;
+    width: 90%;
+    top: 40px;
+    left:5%;
+    overflow:auto;
+    padding: 0%;
+  
+}
+button
+{
+    width: 33.33%;
+   
+}
+

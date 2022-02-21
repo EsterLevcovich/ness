@@ -1,0 +1,35 @@
+
+  
+<mat-card>
+
+  <button mat-raised-button (click)="onAddSelected()">Add row</button>   
+  <button mat-raised-button (click)="onUpDateSelected()">update Selected</button>
+  <button mat-raised-button (click)="onRemoveSelected()">Remove Selected</button> 
+      
+   
+ 
+<ag-grid-angular
+    style="width: 1215px; height: 490px;"
+    class="ag-theme-alpine"
+    [rowData]="itemsList"
+    [columnDefs]="columnDefs"
+    [groupDefaultExpanded]="groupDefaultExpanded"
+    
+  
+    [defaultColDef]="defaultColDef"
+
+    [sideBar]="sideBar"
+   (gridReady)="onGridReady($event)"
+    
+   [rowSelection]="rowSelection"
+  
+  
+   
+      
+> 
+</ag-grid-angular>
+
+
+</mat-card>
+   
+  

@@ -1,0 +1,23 @@
+a
+{
+    top: 250px;
+    left: 45%;
+}
+
+mat-card{
+    margin-top:15%;
+    margin-left: 41.5%;
+    width: 17%;
+   }
+
+   mat-form-field
+   {
+       margin-left: 3%;
+       margin-right: 3%;
+   }
+
+   button
+   {
+    left:42.5%;
+   }
+  
